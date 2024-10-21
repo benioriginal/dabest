@@ -309,10 +309,10 @@ function adjustMenuHeight() {
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     var height = (window.innerHeight > 0) ? window.innerHeight : screen.height;
     if (width >= 1000){
-      menu.style.height = `${remainingHeight}px`;
+      menu.style.height = `${remainingHeight -65 }px`;
       
     }else{
-      menu.style.height = `${remainingHeight}px`;
+      menu.style.height = `${remainingHeight -80}px`;
       
     }
   }
