@@ -29,90 +29,90 @@ const data = {
     "Hamburger": {
       "Hamburger cu pui Shanghai": {
         "description": "Carne Shanghai de pui, cartofi, rosii, castraveti, varza, sosuri",
-        "image": "images/Mancare/Sandwhich OFIBUN.png",
+        "image": "../static/../static/images/Mancare/Sandwhich OFIBUN.png",
         "price": "13 LEI"
       },
       "Hamburger cu piept de pui": {
         "description": "Piept de pui, salata, rosii, castraveti, sosuri",
-        "image": "images/Mancare/Sandwhich OFIBUN.png",
+        "image": "../static/../static/images/Mancare/Sandwhich OFIBUN.png",
         "price": "14 LEI"
       },
       "Hamburger cu pulpa de pui": {
         "description": "Pulpa de pui, salata, cartofi, rosii, sosuri",
-        "image": "images/Mancare/Sandwhich OFIBUN.png",
+        "image": "../static/images/Mancare/Sandwhich OFIBUN.png",
         "price": "13 LEI"
       },
       "Hamburger cu snitel de pui": {
         "description": "Snitel de pui, cartofi, salata, sosuri",
-        "image": "images/Mancare/Sandwhich OFIBUN.png",
+        "image": "../static/images/Mancare/Sandwhich OFIBUN.png",
         "price": "13 LEI"
       },
       "Hamburger cu ceafa de porc": {
         "description": "Ceafa de porc, cartofi, salata, sosuri",
-        "image": "images/Mancare/Sandwhich OFIBUN.png",
+        "image": "../static/images/Mancare/Sandwhich OFIBUN.png",
         "price": "14 LEI"
       }
     },
     "Meniuri": {
       "Meniu de piept de pui Shanghai": {
         "description": "Piept de pui Shanghai, cartofi prajiti, salata, sosuri",
-        "image": "images/Mancare/Sandwhich OFIBUN.png",
+        "image": "../static/images/Mancare/Sandwhich OFIBUN.png",
         "price": "20 LEI"
       },
       "Meniul pulpa de pui": {
         "description": "Pulpa de pui, cartofi prajiti, salata, sosuri",
-        "image": "images/Mancare/Sandwhich OFIBUN.png",
+        "image": "../static/images/Mancare/Sandwhich OFIBUN.png",
         "price": "17 LEI"
       }
     },
     "Shaorma": {
       "Shaorma mare": {
         "description": "Shaorma mare cu carne de pui, cartofi, rosii, castraveti, sosuri",
-        "image": "images/Mancare/Sandwhich OFIBUN.png",
+        "image": "../static/images/Mancare/Sandwhich OFIBUN.png",
         "price": "30 LEI"
       },
       "Shaorma mica": {
         "description": "Shaorma mica cu carne de pui, cartofi, rosii, castraveti, sosuri",
-        "image": "images/Mancare/Sandwhich OFIBUN.png",
+        "image": "../static/images/Mancare/Sandwhich OFIBUN.png",
         "price": "15 LEI"
       },
       "Shaorma la farfurie bucati mari": {
         "description": "Shaorma de pui la farfurie cu bucati mari de carne, legume, sosuri",
-        "image": "images/Mancare/Sandwhich OFIBUN.png",
+        "image": "../static/images/Mancare/Sandwhich OFIBUN.png",
         "price": "24 LEI"
       }
     },
     "Sandwich": {
       "Sandwich cu sunca si cascaval": {
         "description": "Sandwich cu sunca, cascaval, salata, sosuri",
-        "image": "images/Mancare/Sandwhich OFIBUN.png",
+        "image": "../static/images/Mancare/Sandwhich OFIBUN.png",
         "price": "12 LEI"
       }
     },
     "Bauturi": {
       "Doza Cola": {
         "description": "Cola la doza de 330ml",
-        "image": "images/Mancare/Sandwhich OFIBUN.png",
+        "image": "../static/images/Mancare/Sandwhich OFIBUN.png",
         "price": "8.33 LEI"
       },
       "Suc de portocale": {
         "description": "Suc de portocale proaspat stors",
-        "image": "images/Mancare/Sandwhich OFIBUN.png",
+        "image": "../static/images/Mancare/Sandwhich OFIBUN.png",
         "price": "5 LEI"
       },
       "Cafea": {
         "description": "Cafea proaspata",
-        "image": "images/Mancare/Sandwhich OFIBUN.png",
+        "image": "../static/images/Mancare/Sandwhich OFIBUN.png",
         "price": "4 LEI"
       },
       "Apa plata": {
         "description": "Apa plata 500ml",
-        "image": "images/Mancare/Sandwhich OFIBUN.png",
+        "image": "../static/images/Mancare/Sandwhich OFIBUN.png",
         "price": "4 LEI"
       },
       "Apa minerala": {
         "description": "Apa minerala 500ml",
-        "image": "images/Mancare/Sandwhich OFIBUN.png",
+        "image": "../static/images/Mancare/Sandwhich OFIBUN.png",
         "price": "4 LEI"
       }
     }
@@ -309,10 +309,10 @@ function adjustMenuHeight() {
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     var height = (window.innerHeight > 0) ? window.innerHeight : screen.height;
     if (width >= 1000){
-      menu.style.height = `${remainingHeight -65 }px`;
+      menu.style.height = `${remainingHeight}px`;
       
     }else{
-      menu.style.height = `${remainingHeight -80}px`;
+      menu.style.height = `${remainingHeight}px`;
       
     }
   }
