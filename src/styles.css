@@ -659,4 +659,9 @@ a:hover{
     #reviewText{
         margin-bottom: 10px;
     }
+    body{
+        background-image: url('../static/background/background.png');
+        background-color: rgba(255,138,105,0.91);
+        background-blend-mode: lighten;
+    }
   }
