@@ -1,6 +1,7 @@
 body{
-    
-    background: linear-gradient(180deg, rgba(255,161,136,1) 0%, rgba(255,138,105,1) 100%);
+    background-image: url('../static/background/background.png');
+    background-color: rgba(255,138,105,0.91);
+    background-blend-mode: lighten;
 }
 body { margin: 0; }
 html::-webkit-scrollbar {
@@ -21,7 +22,7 @@ html {
 
 @font-face {
     font-family: "Campton";
-    src: url(fonts/Campton/CamptonMedium.otf);
+    src: url(../static/fonts/Campton/CamptonMedium.otf);
     
 }
 span:hover{
@@ -37,12 +38,12 @@ span:hover{
   }
 @font-face {
     font-family: "Campton";
-    src: url(fonts/Campton/CamptonBold.otf);
+    src: url(../static/fonts/Campton/CamptonBold.otf);
     font-weight: bold;   
 }
 @font-face {
     font-family: "Sensei";
-    src: url(fonts/Sensei/SenseiMedium.otf);
+    src: url(../static/fonts/Sensei/SenseiMedium.otf);
 }
 #reviews {
     color: white;
@@ -53,7 +54,7 @@ span:hover{
     justify-content: center;
     align-items: center;
     margin-top: 40px;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/Logo/reviewBackground.png') no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../static/images/Logo/reviewBackground.png') no-repeat;
     background-size: cover;
     position: relative;
     padding: 20px;
