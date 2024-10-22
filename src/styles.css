@@ -420,10 +420,10 @@ a:hover{
     font-size: 60px;
     color: white;
     text-align: center;
+    user-select:text;
 }
 #pePoza{
-
-
+        
 }
 #home{
     
@@ -645,6 +645,10 @@ a:hover{
     #pePoza p {
         margin-top: 0;
         font-size: 30px;
+        
+    }
+    #pePoza p #nrTelPoza{
+        user-select: all;
     }
     
     #menu{
