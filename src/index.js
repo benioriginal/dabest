@@ -202,6 +202,31 @@ nextBtn.addEventListener('click', () => {
 });
 
 updateReview();
+const reviewsContainer = document.getElementById('reviews');
+let startX;
+
+reviewsContainer.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+});
+
+reviewsContainer.addEventListener('touchend', (e) => {
+    const endX = e.changedTouches[0].clientX;
+    const diffX = startX - endX;
+
+    if (Math.abs(diffX) > 50) { // Adjust the threshold as needed
+        if (diffX > 0) {
+            console.log('Swiped left');
+            switchReview('next');
+            resetInterval();
+
+        } else {
+            console.log('Swiped right');
+            switchReview('prev');
+            resetInterval();
+        }
+    }
+});
+
 function populateMenuContent(selected) {
   const menuContent = document.getElementById('menuContent');
   menuContent.innerHTML = '';  // Clear previous content
@@ -260,6 +285,8 @@ function populateMenuContent(selected) {
 document.getElementById('phoneAnimation').onclick = () =>{
     window.open("tel: 0770 661 286")
 }
+
+
 document.getElementById('facebookSVG').onclick = () =>{
     window.open("https://www.facebook.com/people/Ofi-Bun-FastFood/100091143625377/")
 }
@@ -285,10 +312,12 @@ document.querySelectorAll('.buttonMeniu').forEach((element) => {
         
         } )
     element.addEventListener('click', () => {
+      document.querySelectorAll('.menuItem')[0].scrollIntoView();
+      if (element != selected){
         selected.classList.remove('buttonMeniuHover')
         selected = element
         const selectedId = selected.id;
-        populateMenuContent(selectedId);
+        populateMenuContent(selectedId);}
 
     })
 
